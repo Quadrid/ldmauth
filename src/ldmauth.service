@@ -1,0 +1,9 @@
+[Unit]
+Description=Service to start the ldmauth daemon
+
+[Service]
+User=root
+ExecStart=/bin/python3 /bin/ldmauthd
+
+[Install]
+WantedBy=multi-user.target
